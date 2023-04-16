@@ -6,45 +6,12 @@ header, nav, main, footer {
 #mainWrapper{
   main {
 
-      h2 {text-transform: uppercase;}
-      
-      .heroImage img{
-        width: 100%;
-        height: auto;
-      }
-
-      section div.expectations{
-        padding: 2rem 2vw;
-        width: 100%;
-        background: black;
-        color: $lightFont;
-        display: grid;
-        grid-template-columns: 50% auto;
-
-        h2 {color: #fdd831; font-size: 1.5rem;}
-        p, ul {font-size: 1rem;}
-        .list {
-          grid-area: 2;
-        }
-
-        .formula {
-          justify-self: end;
-          h2, p {text-align: end;}
-        }
-        
-      }
-    }
-
     //About Section
     section.about {
       padding-top: 3vh;
       display: grid;
       h2 {
-        font-size: 2em;
-        color: $primaryColor;
-        width: 100%;
-        border-bottom: 1px solid $darkFont;
-        text-align: center;
+        text-align: left;
       }
 
     }
@@ -76,4 +43,5 @@ header, nav, main, footer {
     section div.sponsors {
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
+  }
 }

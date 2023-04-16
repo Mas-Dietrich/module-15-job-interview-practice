@@ -582,68 +582,33 @@ footer div {
   header, nav, main, footer {
     max-width: 60rem;
   }
-  #mainWrapper main h2 {
-    text-transform: uppercase;
-  }
-  #mainWrapper main .heroImage img {
-    width: 100%;
-    height: auto;
-  }
-  #mainWrapper main section div.expectations {
-    padding: 2rem 2vw;
-    width: 100%;
-    background: black;
-    color: #ffffff;
-    display: grid;
-    grid-template-columns: 50% auto;
-  }
-  #mainWrapper main section div.expectations h2 {
-    color: #fdd831;
-    font-size: 1.5rem;
-  }
-  #mainWrapper main section div.expectations p, #mainWrapper main section div.expectations ul {
-    font-size: 1rem;
-  }
-  #mainWrapper main section div.expectations .list {
-    grid-area: 2;
-  }
-  #mainWrapper main section div.expectations .formula {
-    justify-self: end;
-  }
-  #mainWrapper main section div.expectations .formula h2, #mainWrapper main section div.expectations .formula p {
-    text-align: end;
-  }
-  #mainWrapper section.about {
+  #mainWrapper main section.about {
     padding-top: 3vh;
     display: grid;
   }
-  #mainWrapper section.about h2 {
-    font-size: 2em;
-    color: #0480b1;
-    width: 100%;
-    border-bottom: 1px solid #a8a8b2;
-    text-align: center;
+  #mainWrapper main section.about h2 {
+    text-align: left;
   }
-  #mainWrapper div.about-columns {
+  #mainWrapper main div.about-columns {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-  #mainWrapper section div.other {
+  #mainWrapper main section div.other {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-  #mainWrapper section div.other div {
+  #mainWrapper main section div.other div {
     text-align: left;
   }
-  #mainWrapper section div.other div.graphInfo {
+  #mainWrapper main section div.other div.graphInfo {
     background-color: white;
   }
-  #mainWrapper section div.other div.graphInfo p {
+  #mainWrapper main section div.other div.graphInfo p {
     color: #767676;
   }
-  #mainWrapper section div.other .support {
+  #mainWrapper main section div.other .support {
     grid-area: 2/span 3;
   }
-  #mainWrapper section div.sponsors {
+  #mainWrapper main section div.sponsors {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 }
