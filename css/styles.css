@@ -432,7 +432,7 @@ nav a img {
   padding-top: 3vh;
   background-color: #e6e6e6;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 #mainWrapper div.other h3 {
   color: #0480b1;
@@ -506,6 +506,49 @@ footer div {
   }
   header h1 {
     font-size: 2rem;
+  }
+  #mainWrapper main section.about div.about-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+  }
+  #mainWrapper main div.other {
+    padding-top: 3vh;
+    background-color: #e6e6e6;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #mainWrapper main div.other div.graphInfo {
+    background-color: white;
+  }
+  #mainWrapper main div.other div.graphInfo p {
+    text-align: center;
+    color: black;
+  }
+  #mainWrapper main div.other div.graphInfo button {
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #0480b1;
+    border: 0;
+    padding: 0.5rem 3rem;
+    border-radius: 25px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.25rem;
+  }
+  #mainWrapper main div.other div.graphInfo img {
+    width: 300px;
+    height: auto;
+    margin: 0;
+  }
+  #mainWrapper main section div.sponsors {
+    width: 100%;
+    margin: 1rem 16px;
+  }
+  #mainWrapper main section div.sponsors img {
+    margin: 0 0.25rem;
   }
 }
 @media only screen and (min-width: 60rem) {

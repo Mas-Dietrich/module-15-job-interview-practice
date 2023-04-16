@@ -6,3 +6,48 @@ header {
     }
 
 }
+
+//main
+#mainWrapper {
+    main {
+        //Other Details
+        section.about div.about-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            text-align: center;
+          }
+
+        div.other{
+            padding-top: 3vh;
+            background-color: #e6e6e6;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+    
+            div.graphInfo {
+                background-color: white;
+                p {text-align: center; color: black;}
+                button {
+                    width: 80%;
+                    margin: auto;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $primaryColor;
+                    border: 0;
+                    padding: .5rem 3rem;
+                    border-radius: 25px;
+                    text-transform: uppercase;
+                    color: white;
+                    font-size: 1.25rem;
+                }
+                img {width: 300px; height: auto; margin: 0;}
+                }
+        }
+        section div.sponsors {
+            width: 100%;
+            margin: 1rem $gutter;
+    
+            img { margin: 0 .25rem;}
+            
+      }
+    }
+}
