@@ -1,0 +1,193 @@
+/* Prevent adjustments of font size after orientation changes. */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  height: 100%;
+}
+
+/*---- apply a natural box layout model to all elements -------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  font-family: $defaultFont;
+  font-weight: $mediumWeight;
+}
+
+header {
+  display: flex;
+  align-items: flex-end;
+  border-bottom: 1px solid $darkFont;
+  gap: 8px;
+  h1 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: $primaryColor;
+    letter-spacing: 0px;
+  }
+  h2{
+    color: $darkFont;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 1em;
+    margin: 0;
+  }
+}
+
+
+nav {
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+
+    }
+
+  a {
+    display: block;
+    padding: 1rem;
+    color: $darkFont;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 .5em;
+
+    &:hover {
+      color: $primaryColor;
+    }
+
+    img {margin: 0 .25em;}
+  }
+}
+
+//Main Section
+#mainWrapper{
+  main {
+      h2 {text-transform: uppercase;}
+      
+      .heroImage img{
+        width: 100%;
+        height: auto;
+      }
+
+      section div.expectations{
+        padding: 2rem 2vw;
+        width: 100%;
+        background: black;
+        color: $lightFont;
+        display: grid;
+        grid-template-columns: 50% auto;
+
+        h2 {color: #fdd831; font-size: 1.5rem;}
+        p, ul {font-size: 1rem;}
+        .list {
+          grid-area: 2;
+        }
+
+        .formula {
+          justify-self: end;
+          h2, p {text-align: end;}
+        }
+        
+      }
+    }
+
+    //About Section
+    section.about {
+      padding-top: 3vh;
+      display: grid;
+      grid-template-columns: 1fr;
+      h2 {
+        font-size: 2em;
+        color: $primaryColor;
+        width: 100%;
+        border-bottom: 1px solid $darkFont;
+      }
+
+    }
+
+    div.about-columns {
+      gap: 10px;
+      h3 {color: $primaryColor; font-size: 1.5rem;}
+      p {
+        color: $darkFont;
+      }
+      width: 100%;
+      border-bottom: 1px solid $darkFont;
+    }
+
+    //Other Details
+    div.other {
+      padding-top: 3vh;
+      background-color: #e6e6e6;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+
+      h3 {
+        color: $primaryColor;
+        font-size: 1.5rem;
+      }
+
+      p {color: $darkFont; width: 95%;}
+
+      div.graphInfo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        grid-column: 3 / span 3;
+        p {text-align: center; color: black;}
+        button {
+          width: 80%;
+          margin: auto;
+          justify-content: center;
+          align-items: center;
+          background-color: $primaryColor;
+          border: 0;
+          padding: .5rem 3rem;
+          border-radius: 25px;
+          text-transform: uppercase;
+          color: white;
+          font-size: 1.25rem;
+        }
+        img {width: 300px; height: auto; margin: 0;}
+      }
+
+      .support {grid-column: 1 / span 2;}
+    }
+
+
+    section div.sponsors {
+      width: 100%;
+      margin: 1rem $gutter;
+
+      img { margin: 0 .25rem;}
+      
+    }
+  }
+
+  //footer
+  #footerWrapper {
+      background-image: linear-gradient( $primaryColor, #002b5c);
+  }
+  footer {
+      padding: 0.5rem $gutter;
+      p{
+          margin: 0;
+          font-weight: $lightWeight;
+          text-align: center;
+          color: white;
+      }
+
+      div {
+        display: flex;
+        justify-content: flex-start;
+      }
+  }
