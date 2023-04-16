@@ -611,4 +611,9 @@ footer div {
   #mainWrapper main section div.sponsors {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
+  #mainWrapper main section div.sponsors img {
+    padding: 0;
+    justify-self: center;
+    align-self: center;
+  }
 }
