@@ -8,46 +8,72 @@ header {
 }
 
 //main
-#mainWrapper {
+//Main Section
+#mainWrapper{
     main {
-        //Other Details
-        section.about div.about-columns {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            text-align: center;
-          }
 
-        div.other{
-            padding-top: 3vh;
-            background-color: #e6e6e6;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-    
-            div.graphInfo {
-                background-color: white;
-                p {text-align: center; color: black;}
-                button {
-                    width: 80%;
-                    margin: auto;
-                    justify-content: center;
-                    align-items: center;
-                    background-color: $primaryColor;
-                    border: 0;
-                    padding: .5rem 3rem;
-                    border-radius: 25px;
-                    text-transform: uppercase;
-                    color: white;
-                    font-size: 1.25rem;
-                }
-                img {width: 300px; height: auto; margin: 0;}
-                }
+        h2 {text-transform: uppercase;}
+        
+        .heroImage img{
+          width: 100%;
+          height: auto;
         }
-        section div.sponsors {
-            width: 100%;
-            margin: 1rem $gutter;
-    
-            img { margin: 0 .25rem;}
-            
+  
+        section div.expectations{
+          padding: 2rem 2vw;
+          width: 100%;
+          background: black;
+          color: $lightFont;
+          display: grid;
+          grid-template-columns: 50% auto;
+  
+          h2 {color: #fdd831; font-size: 1.5rem;}
+          p, ul {font-size: 1rem;}
+          .list {
+            grid-area: 2;
+          }
+  
+          .formula {
+            justify-self: end;
+            h2, p {text-align: end;}
+          }
+          
+        }
       }
-    }
+  
+      //About Section
+      section.about {
+        padding-top: 3vh;
+        display: grid;
+        h2 {
+          font-size: 2em;
+          color: $primaryColor;
+          width: 100%;
+          border-bottom: 1px solid $darkFont;
+          text-align: center;
+        }
+  
+      }
+  
+      div.about-columns {
+        display: grid;
+        text-align: center;
+        h3 {color: $primaryColor; font-size: 1.5rem;}
+        p {
+          color: $darkFont;
+        }
+        width: 100%;
+        border-bottom: 1px solid $darkFont;
+        grid-template-columns: 1fr 1fr;
+      }
+  
+  
+      //Other Details
+      section div.other{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      section div.sponsors {
+       grid-template-columns: 1fr 1fr 1fr; }
 }

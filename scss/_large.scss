@@ -1,36 +1,79 @@
 header, nav, main, footer {
     max-width: 60rem;
-    margin: auto;
 }
 
 //Main 
 #mainWrapper{
-    main {
-    
-        section div.expectations{
-          padding: 2rem 2vw;
-          width: 100%;
-          background: black;
-          color: $lightFont;
-          display: grid;
-          grid-template-columns: 60% auto;
-    
-          h2 {color: #fdd831; font-size: 3rem;}
-          p, ul {font-size: 1.5rem;}
-          .list {
-            grid-area: 2;
-          }
-    
-          .formula {
-            justify-self: end;
-            h2, p {text-align: end;}
-          }
-          
-        }
+  main {
+
+      h2 {text-transform: uppercase;}
+      
+      .heroImage img{
+        width: 100%;
+        height: auto;
       }
 
-      section.about div.about-columns {
+      section div.expectations{
+        padding: 2rem 2vw;
+        width: 100%;
+        background: black;
+        color: $lightFont;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 50% auto;
+
+        h2 {color: #fdd831; font-size: 1.5rem;}
+        p, ul {font-size: 1rem;}
+        .list {
+          grid-area: 2;
+        }
+
+        .formula {
+          justify-self: end;
+          h2, p {text-align: end;}
+        }
+        
       }
     }
+
+    //About Section
+    section.about {
+      padding-top: 3vh;
+      display: grid;
+      h2 {
+        font-size: 2em;
+        color: $primaryColor;
+        width: 100%;
+        border-bottom: 1px solid $darkFont;
+        text-align: center;
+      }
+
+    }
+
+    div.about-columns {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+
+    //Other Details
+    section div.other{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      
+      div {
+        text-align: left;
+      }
+
+      div.graphInfo {
+        background-color: white;
+        p {color: #767676;}
+      }
+
+      .support {
+        grid-area: 2/ span 3;
+      }
+    }
+
+    section div.sponsors {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
